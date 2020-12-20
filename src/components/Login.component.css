@@ -1,0 +1,23 @@
+#profile-picture {
+    background-image: url("http://localhost:3000/profile.jpeg");
+    background-size: cover;
+    height: inherit;
+    background-position: right;
+}
+#profile-picture {
+    & #remove-account{
+          width: 18px;
+          height: 18px;
+          top: 1%;
+          left: 1%;
+          & span {
+              top: -10%;
+              position: absolute;
+              left: 33%;
+            }
+      }
+    & #notification-badge {
+          top: 1%;
+          right: 2%;
+    }
+}
