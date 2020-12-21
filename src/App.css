@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-.App {
+
+.App, html {
     @apply bg-gray-100 h-full
 }
