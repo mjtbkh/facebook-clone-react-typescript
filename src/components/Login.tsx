@@ -1,6 +1,7 @@
 import React, {useState, useContext} from 'react'
 import { UserContext } from '../contexts/UserContext'
 import './Login.component.css'
+import Button, { ButtonTypes } from './UIElements/Button'
 
 const Login:React.FC = () => {
     const [currentUser, setCurrentUser] = useState('')
@@ -42,11 +43,11 @@ const Login:React.FC = () => {
                            onChange={(e: any) => getUsername(e.target.value)}
                     />
                     <input className="bg-white rounded-sm border-2 border-gray-100 px-1 py-4 mb-4" type="password" placeholder="Password" name="password"/>
-                    <button type="submit" className="w-full bg-blue-500 rounded-lg mb-4 text-white text-2xl p-3 mx-auto cursor-pointer">Login</button>
+                    <Button type={ButtonTypes.primary} text={"Login"} />
                 </form>
                 <a href="http://fb.com/" className="text-blue-400">Forgot password?</a>
                 <hr />
-                <button className="w-full lg:w-1/2 justify-center bg-green-500 rounded-lg text-white font-bold my-4 p-3 flex mx-auto" >Create new account</button>
+                <Button type={ButtonTypes.secondary} text={"Create new account"} />
                 <span className="text-gray-700 text-center text-sm mt-16 mr-4 cursor-pointer"><b>Create a Page</b> for a celebrity, band or business.</span>
             </div>
 
