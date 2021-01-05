@@ -4,5 +4,5 @@
 
 
 .App, html {
-    @apply bg-gray-100 h-full
+    @apply bg-gray-100 h-full w-full
 }
